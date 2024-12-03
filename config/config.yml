@@ -24,7 +24,7 @@ ri_bev_generation:
 
 train_cvtnet:
   # path of training index
-  traindata_file: "/data/jiehao/dataset/3D/NCLT/train_setmore_chosen_normalized_data_120108.npy"
+  traindata_file: "/data/jiehao/dataset/3D/NCLT/train_set/more_chosen_normalized_data_120108.npy"
   # the number of input layers for each view
   num_layers: 5
   # overlap threshold
@@ -44,7 +44,8 @@ train_cvtnet:
   # whether to resume from pretrained weights
   resume: False
   # path of pretrained weights
-  weights: "/data/jiehao/dataset/3D/NCLT/ri_bev_weights_multi_input/cvtnet_weights/pretrained_model.pth.tar"
+  # weights: "/data/jiehao/dataset/3D/NCLT/ri_bev_weights_multi_input/cvtnet_weights/pretrained_model.pth.tar"
+  weights:
   # path to save weights
   save_path: "/data/jiehao/dataset/3D/NCLT/ri_bev_weights_multi_input/cvtnet_weights/"
 
