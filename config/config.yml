@@ -1,14 +1,14 @@
 data_root:
   # path of database RIVs and BEVs
-  ri_bev_database_root: "/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2012-01-08_vel/ri_bev/"
+  ri_bev_database_root: "/data/jiehao/dataset/3D/NCLT/velodyne_data/2012-01-08_vel/ri_bev/"
   # path of query RIVs and BEVs
-  ri_bev_query_root: "/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2012-02-05_vel/ri_bev/"
+  ri_bev_query_root: "/data/jiehao/dataset/3D/NCLT/velodyne_data/2012-02-05_vel/ri_bev/"
 
 ri_bev_generation:
   # path of source .bin files
-  source_scans_root: "/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2012-01-08_vel/velodyne_sync/"
+  source_scans_root: "/data/jiehao/dataset/3D/NCLT/velodyne_data/2013-04-05_vel/velodyne_sync/"
   # path of target .npy files including RIVs and BEVs
-  target_ri_bev_root: "/media/mjy/Samsung_T5/NCLT_dataset/velodyne_data/2012-01-08_vel/ri_bev/"
+  target_ri_bev_root: "/data/jiehao/dataset/3D/NCLT/velodyne_data/2013-04-05_vel/ri_bev/"
   # upper bound of vertical fov
   fov_up: 30.67
   # lower bound of vertical fov
@@ -44,13 +44,13 @@ train_cvtnet:
   # whether to resume from pretrained weights
   resume: False
   # path of pretrained weights
-  weights: "/media/mjy/Samsung_T5/NCLT_dataset/ri_bev_weights_multi_input/cvtnet_weights/pretrained_model.pth.tar"
+  weights: "/data/jiehao/dataset/3D/NCLT/ri_bev_weights_multi_input/cvtnet_weights/pretrained_model.pth.tar"
   # path to save weights
-  save_path: "/media/mjy/Samsung_T5/NCLT_dataset/ri_bev_weights_multi_input/cvtnet_weights/"
+  save_path: "/data/jiehao/dataset/3D/NCLT/ri_bev_weights_multi_input/cvtnet_weights/"
 
 test_cvtnet_prepare:
   # path of pretrained weights
-  weights: "/media/mjy/Samsung_T5/NCLT_dataset/ri_bev_weights_multi_input/cvtnet_weights/pretrained_model.pth.tar"
+  weights: "/data/jiehao/dataset/3D/NCLT/ri_bev_weights_multi_input/cvtnet_weights/pretrained_model.pth.tar"
   # the number of input layers for each view
   num_layers: 5
   # the number of top candidates
@@ -62,10 +62,10 @@ cal_topn_recall:
   # place recognition results from test_cvtnet_prepare.py
   recog_list: "./pr_results.npz"
   # ground truth
-  ground_truth: "/media/mjy/Samsung_T5/NCLT_dataset/gt_by_dis/gt_120108_120205.npy"
+  ground_truth: "/data/jiehao/dataset/3D/NCLT/gt_by_dis/gt_120108_120205.npy"
   # the number of top candidates
   topn: 20
 
 cpp_implementation:
   # path of pretrained weights
-  weights: "/media/mjy/Samsung_T5/NCLT_dataset/ri_bev_weights_multi_input/cvtnet_weights/pretrained_model.pth.tar"
+  weights: "/data/jiehao/dataset/3D/NCLT/ri_bev_weights_multi_input/cvtnet_weights/pretrained_model.pth.tar"
