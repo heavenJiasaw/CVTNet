@@ -47,7 +47,7 @@ class trainHandler():
 
     def train(self):
 
-        epochs = 30
+        epochs = 50
 
         if self.resume:
             print("resuming from ", self.pretrained_weights)
