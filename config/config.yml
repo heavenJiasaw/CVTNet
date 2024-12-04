@@ -51,7 +51,8 @@ train_cvtnet:
 
 test_cvtnet_prepare:
   # path of pretrained weights
-  weights: "/data/jiehao/dataset/3D/NCLT/ri_bev_weights_multi_input/cvtnet_weights/pretrained_model.pth.tar"
+  # weights: "/data/jiehao/dataset/3D/NCLT/ri_bev_weights_multi_input/cvtnet_weights/pretrained_model.pth.tar"
+  weights: "/data/jiehao/dataset/3D/NCLT/ri_bev_weights_multi_input/cvtnet_weights/amodel_cvtnet10.pth.tar"
   # the number of input layers for each view
   num_layers: 5
   # the number of top candidates
